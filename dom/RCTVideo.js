@@ -75,6 +75,10 @@ class RCTVideo extends RCTView {
     return elem;
   }
 
+  play() {
+    this.paused(false);
+  }
+
   presentFullscreenPlayer() {
     this.videoElement.webkitRequestFullScreen();
   }
